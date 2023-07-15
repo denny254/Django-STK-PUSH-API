@@ -8,7 +8,7 @@ from django_daraja.mpesa.core import MpesaClient
 def index(request):
     cl = MpesaClient()
     # Use a Safaricom phone number that you have access to, for you to be able to view the prompt.
-    phone_number = ''
+    phone_number = '0708888839'
     amount = 1
     account_reference = 'reference'
     transaction_desc = 'Description'
@@ -19,6 +19,6 @@ def index(request):
 def stk_push_callback(request):
         data = request.body
         
-        return HttpResponse("STK Push in Django👋")
+        return HttpResponse("STK Push in Django")
 
 
